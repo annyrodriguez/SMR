@@ -1,0 +1,69 @@
+---
+title: "Welcome"
+---
+
+<style>
+.fixed-headshot {
+  position: fixed;
+  top: 120px;
+  left: 40px;
+  width: 420px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+.content-shift {
+  margin-left: 320px;
+}
+@media(max-width: 900px) {
+  .fixed-headshot {
+    position: static;
+    width: 180px;
+    margin-bottom: 20px;
+  }
+  .content-shift {
+    margin-left: 0;
+  }
+}
+</style>
+
+<img src="SMR.png" class="fixed-headshot" alt="Dr. Stephanie Miles-Richardson">
+
+<div class="content-shift">
+
+# Dr. ***Stephanie Miles-Richardson***, DVM, PhD
+
+*Founding Chair & Professor*  
+**Department of Public Health Education**  
+Morehouse School of Medicine — Atlanta, Georgia
+
+---
+
+Dr. Stephanie Miles-Richardson is a **national leader in environmental health, climate justice, and public health education**. She serves as the ***Founding Chair*** of the Department of Public Health Education at Morehouse School of Medicine (MSM), while also holding the roles of **Associate Dean of Graduate Education in Public Health** and **Director of the Master of Public Health Program**. 
+
+Prior to joining MSM in 2008, Dr. Miles-Richardson completed over a decade of **federal public health service**, including roles as a **United States Public Health Service Commissioned Officer** and **Scientific Technical Advisor** for a $4 million toxicology research program at the Agency for Toxic Substances and Disease Registry. She later served as **Associate Director of Minority Health and Health Disparities Policy** at the Centers for Disease Control and Prevention (CDC). 
+
+Dr. Miles-Richardson has also made **historic contributions to the governance of academic public health**. She was appointed to the **Council on Education for Public Health (CEPH)** in 2015 and later became **the first African American to serve as President** of both:
+- the *Association of Accredited Public Health Programs* (2018), and
+- **CEPH** (2019). 
+
+Her national influence extends to leadership in **One Health**, **health disparities policy**, and **climate-focused public health curriculum**. She received grant support from the **Association for Prevention Teaching and Research** and CDC to develop an interdisciplinary **Climate Justice** course for wide dissemination. She was also awarded an **honorary diploma by the American Veterinary Epidemiology Society** for her impact in advancing human and animal health. 
+
+Currently, she serves as the **inaugural Director of the Beacon of Hope Center of Excellence on Climate and Environmental Health** at MSM and as a **Governing Councilor** for the **Environment Section of the American Public Health Association**. 
+
+---
+
+## Education
+- **PhD, Pathology & Environmental Toxicology** — Michigan State University  
+- **Doctor of Veterinary Medicine (DVM)** — Tuskegee University  
+- **BS, Biology** — Grambling State University  
+
+---
+
+## About the Site
+
+Use this website to learn more about Dr.Miles-Richardson's:
+
+- Curriculum Vitae & Roles  
+- Scholarly Contributions & Publications  
+- Public Health Leadership & Projects  
+- Media & Community Engagement

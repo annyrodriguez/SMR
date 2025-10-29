@@ -1,0 +1,115 @@
+/*-- scss:defaults --*/
+
+/* Palette */
+$milkycoffee:   #9b7d61;  
+$roastedpeach:  #daa38f;
+$wholewheat:  #e9d7c0;  
+$eucalyptus: #92ada4;  
+$cream:  #fed8a6;  
+$white:  #FFFFFF;
+$vanilla: #DFCEB9;
+
+/* Quarto base tokens */
+$body-bg:       $wholewheat;       
+$body-color:    $milkycoffee;      
+$link-color:    $cream;      
+$heading-color: $roastedpeach;      
+
+strong {
+  color: $eucalyptus;   /* pick any color you like */
+  font-weight: 700; /* keep it bold */
+}
+
+em {
+  color: $vanilla;   /* example color */
+  font-style: italic;
+}
+
+
+/* Typography */
+$font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+$font-serif: "Libre Baskerville", Georgia, "Times New Roman", serif;
+
+/*-- scss:rules --*/
+
+/* Body & headings */
+body { font-family: $font-sans; background: $body-bg; color: $body-color; }
+h1, h2, h3, h4, h5, h6 { color: $heading-color; font-family: $font-serif; font-weight: 700; }
+
+/* Content cards (light on dark for readability) */
+.main-content :is(section, article, .callout, .panel, .quarto-figure, .card) {
+  background: $milkycoffee;
+  color: #1f2a30;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+}
+
+/* Links */
+a { color: $link-color; text-decoration: none; }
+a:hover { color: lighten($link-color, 8%); text-decoration: underline; }
+
+/* Buttons */
+button, .btn {
+  background: $cream;
+  color: $eucalyptus;
+  border: 1px solid darken($cream, 8%);
+  border-radius: 8px;
+  padding: .48rem .9rem;
+}
+button:hover, .btn:hover { background: darken($spruce, 6%); }
+
+/* Code & pre */
+code, pre {
+  background: mix($eucalyptus, $white, 70%);
+  color: #23333a;
+  border-radius: 6px;
+  padding: .2rem .4rem;
+}
+
+/* ===== NAVBAR (no Cosmo look) ===== */
+$nav-bg:     $wholewheat;
+$nav-fg:     $milkycoffee;
+$nav-accent: $roastedpeach;
+
+.navbar, .navbar.navbar-expand-lg, .navbar-dark {
+  background-color: $nav-bg !important;
+  color: $nav-fg !important;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.navbar .navbar-brand { color: $nav-fg !important; font-family: $font-serif; font-weight: 700; }
+.navbar .navbar-brand:hover { color: lighten($nav-accent, 12%) !important; }
+
+.navbar .navbar-nav .nav-link {
+  color: rgba($nav-fg, .9) !important;
+  padding: .6rem .9rem;
+  font-weight: 500;
+}
+.navbar .navbar-nav .nav-link:hover { color: $nav-accent !important; }
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .show > .nav-link {
+  color: $nav-fg !important;
+  border-bottom: 2px solid $nav-accent;
+}
+
+/* Dropdowns (if any) */
+.navbar .dropdown-menu {
+  background: $wholewheat;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: .6rem;
+}
+.navbar .dropdown-item { color: #1f2a30; }
+.navbar .dropdown-item:hover { background: rgba($green, .15); color: #1f2a30; }
+
+/* Title banner (if Quarto adds one) */
+.quarto-title-banner { background: $wholewheat !important; color: $beige !important; }
+
+/* Headshot flair (optional) */
+img[alt~="headshot"], img[alt*="headshot"] {
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,.08);
+  background: $beige;
+  padding: 4px;
+}

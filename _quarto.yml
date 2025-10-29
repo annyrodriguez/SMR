@@ -1,0 +1,30 @@
+project:
+  type: website
+  resources:
+    - images/**
+    
+website:
+  title: "Stephanie Miles-Richardson, DVM, Ph.D."
+  navbar:
+    left:
+      - text: "Welcome"
+        href: index.qmd
+      - text: "Resume"
+        href: about.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Projects"
+        href: projects.qmd
+      - text: "Accomplishments"
+        href: accomplishments.qmd
+      - text: "Contact"
+        href: contact.qmd
+
+format:
+  html:
+    anchor-sections: false
+    theme: styles.scss
+    toc: true
+    link-external-newwindow: true
+    link-external-icon: false
+    smooth-scroll: true

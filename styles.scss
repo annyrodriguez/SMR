@@ -1,0 +1,153 @@
+/*-- scss:defaults --*/
+
+/* 🌿 Neutral & Natural Palette (no grays, no blues) */
+$cream:        #FAF7F2;  // page background
+$sand:         #EDE3D6;  // soft section background
+$linen:        #F6F1E9;  // cards/content background
+$tan:          #D4BFAA;  // accents
+$walnut:       #7B5E57;  // headings / navbar
+$chestnut:     #75493F;
+$cocoa:        #5A3E36;  // strong text
+$olive:        #556B2F;  // secondary buttons, emphasis
+$white:        #FFFFFF;  // neutral base
+
+/* Quarto tokens */
+$body-bg:       $cream;
+$body-color:    $cocoa;
+$link-color:    $chestnut;
+$heading-color: $walnut;
+
+/* Typography */
+$font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+$font-serif:"Libre Baskerville", Georgia, "Times New Roman", serif;
+
+/* Emphasis */
+strong { color: $walnut; font-weight: 700; }
+em     { color: $olive; font-style: italic; }
+
+/*-- scss:rules --*/
+
+/* Ensure site title displays fully in navbar */
+.navbar .navbar-brand {
+  white-space: normal !important;   /* allows wrapping instead of cutoff */
+  max-width: 100% !important;       /* expands width */
+  line-height: 1.2;                 /* better readability if wrapped */
+  overflow: visible !important;     /* prevents clipping */
+}
+
+/* Body & headings */
+body {
+  background: $body-bg;
+  color: $body-color;
+  font-family: $font-sans;
+  line-height: 1.55;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+  font-family: $font-serif;
+  font-weight: 700;
+  margin-top: 1.2em;
+}
+
+/* Content cards */
+.main-content :is(section, article, .callout, .panel, .quarto-figure, .card) {
+  background: $linen;
+  color: $body-color;
+  border: 1px solid rgba(0,0,0,.05);
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,.04);
+}
+
+/* Links & accents */
+$link-color: #556B2F;  // Dark Olive
+
+a {
+  color: $link-color;
+  text-decoration: underline;
+  font-weight: 500;
+}
+a:hover {
+  color: lighten($link-color, 8%);
+  text-decoration: none;
+}
+
+/* Links & accents */
+$link-color: #556B2F;  // Dark Olive
+
+a {
+  color: $link-color;
+  text-decoration: underline;
+  font-weight: 500;
+}
+a:hover {
+  color: lighten($link-color, 8%);
+  text-decoration: none;
+}
+
+
+
+/* Buttons */
+button, .btn {
+  background: $tan;
+  color: $white;
+  border: none;
+  border-radius: 8px;
+  padding: .48rem .9rem;
+}
+button:hover, .btn:hover { background: darken($tan, 8%); }
+
+.btn-secondary {
+  background: $olive;
+  color: $white;
+}
+.btn-secondary:hover { background: darken($olive, 8%); }
+
+/* Code */
+code, pre {
+  background: $sand;
+  color: $cocoa;
+  border-radius: 6px;
+  padding: .25rem .5rem;
+}
+
+/* Navbar */
+$nav-bg:     $walnut;
+$nav-fg:     $cream;
+$nav-accent: $tan;
+
+.navbar, .navbar.navbar-expand-lg {
+  background-color: $nav-bg !important;
+  color: $nav-fg !important;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.navbar .navbar-brand {
+  color: $nav-fg !important;
+  font-family: $font-serif;
+  font-weight: 700;
+}
+.navbar .navbar-brand:hover { color: $nav-accent !important; }
+.navbar .navbar-nav .nav-link {
+  color: rgba($nav-fg, .9) !important;
+  padding: .6rem .9rem;
+  font-weight: 500;
+}
+.navbar .navbar-nav .nav-link:hover { color: $nav-accent !important; }
+.navbar .navbar-nav .nav-link.active {
+  border-bottom: 2px solid $nav-accent;
+}
+
+/* Title banner */
+.quarto-title-banner {
+  background: $sand !important;
+  color: $cocoa !important;
+}
+
+/* Headshot styling (optional) */
+img[alt~="headshot"], img[alt*="headshot"] {
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,.08);
+  background: $cream;
+  padding: 4px;
+}
